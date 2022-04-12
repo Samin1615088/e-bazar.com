@@ -3,7 +3,7 @@ import Header from "./components/Header";
 import { Button, Container, Row, Col } from "react-bootstrap";
 import HomeScreen from "./screens/HomeScreen";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import ProjectScreen from "./screens/ProjectScreen";
+import ProductScreen from "./screens/ProductScreen";
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
         <Container>
           <Routes>
             <Route path="/" element={<HomeScreen />} exact />
-            <Route path="/product/:id" element={<ProjectScreen />} />
+            <Route path="/product/:id" element={<ProductScreen />} />
           </Routes>
         </Container>
       </main>
